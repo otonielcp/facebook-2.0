@@ -1,20 +1,22 @@
-import Image from "next/image";
+/** @format */
+
+import Image from 'next/image';
 
 function Contact({ src, name }) {
-  return (
-    <div className="flex items-center space-x-3 mb-2 relative hover:bg-gray-200 cursor-pointer p-2 rounded-xl">
-      <Image
-        className="rounded-full"
-        objectFit="cover"
-        src={src}
-        width={50}
-        height={50}
-        layout="fixed"
-      />
-      <p>{name}</p>
-      <div className="absolute bottom-2 left-7 bg-green-400 h-3 w-3 rounded-full" />
-    </div>
-  );
+	return (
+		<div className='relative flex items-center p-2 mb-2 space-x-3 cursor-pointer hover:bg-gray-200 rounded-xl'>
+			<Image
+				className='rounded-full'
+				objectFit='cover'
+				src={src}
+				width={50}
+				height={50}
+				layout='fixed'
+			/>
+			<p>{name}</p>
+			<div className='absolute w-3 h-3 bg-green-400 rounded-full bottom-2 left-7' />
+		</div>
+	);
 }
 
 export default Contact;
