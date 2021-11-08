@@ -1,6 +1,6 @@
 /** @format */
 															
-
+					
 import { EmojiHappyIcon } from '@heroicons/react/outline'; 
 import { CameraIcon, VideoCameraIcon } from '@heroicons/react/solid';
 import { useSession } from 'next-auth/client';
